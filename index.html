@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incidious Gym</title>
+    <style>
+        body {
+            margin: 0px;
+            background-image: url('bg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            font-family: 'Alata', sans-serif;
+            color: white;
+        }
+
+        .header {
+            
+            margin: 1% 5px;
+            border: black solid 2px;
+            border-radius: 10px;
+        }
+
+        .left {
+            position: absolute;
+            left: 10px;
+            top: 30px;
+            display: inline-block;
+            /* border: red solid 2px; */
+            text-align: center;
+            color: black;
+        }
+
+        .mid {
+
+            margin: 10px auto;
+            width: 50%;
+            font-size: 25px;
+            padding: 1px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .right {
+            position: absolute;
+            right: 10px;
+            top: 25px;
+            display: inline-block;
+            /* border: blue solid 2px; */
+            /* width: 18%; */
+            padding: 33px 0px;
+        }
+
+        img {
+            display: block;
+            width: 60px;
+            margin: 4px auto;
+            
+        }
+
+
+
+        .navbar il {
+            /* border: blue solid 2px; */
+            list-style-type: none;
+            padding: 22px 11px;
+            /* background-color: rgb(156, 156, 156); */
+        }
+
+        .navbar il a {
+
+            text-decoration: none;
+            color:black;
+            /* border:#adadad38 solid 2px; */
+        }
+
+        .navbar ul {
+            padding-inline-start: 0%;
+            padding-inline-end: 0%;
+
+        }
+
+        .btn {
+            height: 23px;
+            width: 60px;
+            display: block;
+            float: right;
+            color: white;
+            border-color: white;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 4px;
+            background-color: black;
+            padding: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            color: black;
+            background-color: white;
+            border-color: black;
+        }
+
+        .btn:active {
+            color: white;
+            border-color: white;
+            background-color:black;
+        }
+
+        .navbar il a:hover,
+        .navbar il a:active {
+            color:white;
+
+            text-decoration: black;
+
+        }
+
+        #text {
+            display: inline-block;
+            padding-right: 5px;
+        }
+
+        .container {
+            
+            
+            display: block;
+            /* margin: auto; */
+            position: absolute;
+            top: 170px;
+            left: 100px;
+            width: 25%;
+            border: black solid 2px;
+            border-radius: 10px;
+            color: black;
+            font-weight: bold;
+
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .container input {
+            width: 200px;
+            display: inline-block;
+            margin-bottom: 25px;
+            border: black solid 1px;
+            background-color:white;
+            color: black;
+        }
+
+        .label {
+            display: inline-block;
+
+        }
+
+        .formcont {
+            width: 85%;
+            margin: auto;
+            /* border: black solid 2px; */
+            padding: 2px 2px;
+        }
+
+        .Signup {
+            width: 100%;
+            background-color: white;
+            color: black;
+            border: black;
+        }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div>Incidious Gym</div>
+        </div>
+        <div class="mid">
+            <div class="navbar">
+                <ul>
+                    <il><a href="#">Home</a></il>
+                    <il><a href="#">Places</a></il>
+                    <il><a href="#">About us</a></il>
+                    <il><a href="#">Contact us</a></il>
+
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div id="text">
+                Already a Member!
+            </div>
+            <button class="btn">Login</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>Join us now!</h3>
+        <form action="noac">
+            <div class="formcont">
+
+                <div class="label">
+                    Name &nbsp;&nbsp;&nbsp;
+                </div>
+                <input type="text" placeholder="your name"><br>
+                <div class="label">
+                    City &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <input type="text" placeholder="your name"><br>
+                <div class="label">
+                    Email &nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <input type="email" placeholder="your name"><br>
+                <div class="label">
+                    Contact
+                </div>
+                <input type="number" placeholder="your name">
+                <button class="btn Signup"type="submit">Submit</button>
+            </div>
+
+        </form>
+
+
+    </div>
+</body>
+
+</html>
